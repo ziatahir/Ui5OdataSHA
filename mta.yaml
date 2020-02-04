@@ -1,0 +1,40 @@
+ID: Odata
+_schema-version: '2.1'
+description: Ui5 with Odata
+version: 0.0.1
+
+modules:
+ - name: flight
+   type: html5
+   path: flight
+   parameters:
+      disk-quota: 256M
+      memory: 256M
+   build-parameters:
+      builder: grunt
+   requires:
+    - name: uaa_Odata
+    - name: dest_Odata
+    - name: conn_Odata
+
+resources:
+ - name: uaa_Odata
+   parameters:
+      path: ./xs-security.json
+      service-plan: application
+      service: xsuaa
+   type: org.cloudfoundry.existing-service
+
+ - name: dest_Odata
+   parameters:
+      service-plan: lite
+      service: destination
+   type: org.cloudfoundry.existing-service
+
+
+ - name: conn_Odata
+   parameters:
+      service-plan: lite
+      service: connectivity
+   type: org.cloudfoundry.existing-service
+
