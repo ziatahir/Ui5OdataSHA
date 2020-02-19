@@ -33,7 +33,7 @@ module.exports = function(grunt) {
 
 	//Now we will load the npm tasks that we want to execute
 	grunt.loadNpmTasks("gruntify-eslint");
-	grunt.registerTask("build", ["eslint", "clean"]);
+	grunt.registerTask("build", ["eslint"]);
 	grunt.registerTask("default", "build");
 	
 };
