@@ -24,15 +24,18 @@ module.exports = function(grunt) {
 				//adding output file
 				outputFile: "eslintCheckstyleOutput.xml"
 			}
-		}
-
-		
-
+		},
+		//To run qunit
+		 qunit: {
+                    all: "webapp/test/unit/qunitTest.html"
+			       // all: "webapp/test/unit/unitTests.qunit.html"
+        }
 		
 	});
 
 	//Now we will load the npm tasks that we want to execute
 	grunt.loadNpmTasks("gruntify-eslint");
+	grunt.loadNpmTasks("grunt-contrib-qunit");
 	grunt.registerTask("build", ["eslint"]);
 	grunt.registerTask("default", "build");
 	
