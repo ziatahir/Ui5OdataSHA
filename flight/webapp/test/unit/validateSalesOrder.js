@@ -1,4 +1,6 @@
-  function validateSalesDocNumber( salOrdNumber ) {
+/* eslint-disable */
+
+function validateSalesDocNumber( salOrdNumber ) {
        "use strict";
        var status;
        if (salOrdNumber.toString().length > 9) {
