@@ -7,7 +7,7 @@ function validateSalesDocNumber(SalOrdNumber) {
             status = false;
         }
         return status;
-},
+}
 onValidate: function(oEvent) {
 			if (!this.validateSalesDocNumber(oEvent.getSource().getValue())) {
 				oEvent.getSource().setValueState("Error");
@@ -20,4 +20,12 @@ onValidate: function(oEvent) {
 function addTwoNumbers(NumberOne, NumberTwo) {
     "use strict";
      return numberOne + numberTwo;
+}
+onValidate: function(oEvent) {
+			if (!this.addTwoNumbers(oEvent.getSource().getValue())) {
+				oEvent.getSource().setValueState("Error");
+				MessageBox.error("Personnel number should be minimum 10 digits.");
+			} else {
+				oEvent.getSource().setValueState("Success");
+			}
 }
