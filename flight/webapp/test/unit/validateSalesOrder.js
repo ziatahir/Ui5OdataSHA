@@ -1,4 +1,4 @@
-function validateSalesDocNumber( salOrdNumber ) {
+function validateSalesDocNumber(salOrdNumber) {
        var status;
        if (salOrdNumber.toString().length > 9) {
             status = true;
@@ -8,6 +8,6 @@ function validateSalesDocNumber( salOrdNumber ) {
         return status;
 }
 
-function addTwoNumbers( numberOne, numberTwo ) {
+function addTwoNumbers(numberOne, numberTwo) {
     return numberOne + numberTwo;
 }
