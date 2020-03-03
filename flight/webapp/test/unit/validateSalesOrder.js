@@ -1,7 +1,7 @@
 function validateSalesDocNumber(argSalOrdNumber) {
        "use strict";
        var status;
-       var salOrdNumber = argSalOrdNumber;
+       var salOrdNumber = this.argSalOrdNumber;
        if (salOrdNumber.toString().length > 9) {
             status = true;
         } else {
@@ -12,7 +12,7 @@ function validateSalesDocNumber(argSalOrdNumber) {
 
 function addTwoNumbers(argNumberOne, argNumberTwo) {
     "use strict";
-     var numberOne = argNumberOne;
-     var numberTwo = argNumberTwo; 
+     var numberOne = this.argNumberOne;
+     var numberTwo = this.argNumberTwo; 
      return numberOne + numberTwo;
 }
