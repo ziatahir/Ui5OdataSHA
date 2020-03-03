@@ -1,4 +1,4 @@
-(function validateSalesDocNumber(argSalOrdNumber) {
+function validateSalesDocNumber(argSalOrdNumber) {
        "use strict";
        var status;
        var salOrdNumber = argSalOrdNumber;
@@ -8,7 +8,7 @@
             status = false;
         }
         return status;
-})();
+}
 
 function addTwoNumbers(argNumberOne, argNumberTwo) {
     "use strict";
