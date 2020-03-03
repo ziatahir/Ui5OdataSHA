@@ -10,7 +10,9 @@ function validateSalesDocNumber(argSalOrdNumber) {
         return status;
 }
 
-function addTwoNumbers(numberOne, numberTwo) {
+function addTwoNumbers(argNumberOne, argNumberTwo) {
     "use strict";
-    return numberOne + numberTwo;
+     var numberOne = argNumberOne;
+     var numberTwo = argNumberTwo; 
+     return numberOne + numberTwo;
 }
