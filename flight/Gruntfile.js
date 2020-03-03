@@ -37,6 +37,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("gruntify-eslint");
 	grunt.loadNpmTasks("grunt-contrib-qunit");
 	grunt.registerTask("build", ["eslint"]);
-	grunt.registerTask("default", "build");
+	//grunt.registerTask("default", "build");
 	
 };
