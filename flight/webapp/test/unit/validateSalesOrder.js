@@ -8,3 +8,8 @@ function validateSalesDocNumber(SalOrdNumber) {
         }
         return status;
 }
+
+function addTwoNumbers(NumberOne, NumberTwo) {
+    "use strict";
+     return numberOne + numberTwo;
+}
