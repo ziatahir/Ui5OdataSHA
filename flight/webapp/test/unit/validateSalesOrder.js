@@ -1,6 +1,7 @@
-function validateSalesDocNumber(salOrdNumber) {
+function validateSalesDocNumber(argSalOrdNumber) {
        "use strict";
        var status;
+       var salOrdNumber = argSalOrdNumber ;
        if (salOrdNumber.toString().length > 9) {
             status = true;
         } else {
