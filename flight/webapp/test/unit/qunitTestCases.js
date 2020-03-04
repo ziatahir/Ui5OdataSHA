@@ -5,10 +5,10 @@ QUnit.test("Invalid Sales Document Number", function(assert) {
 
 QUnit.test("Invalid Sales Document Number", function(assert) {
       "use strict";
-      assert.equal( true, validateSalesDocNumber(134567890), "length is less" );
+      assert.equal( flase, validateSalesDocNumber(134567890), "length is less" );
 });
 
 QUnit.test( "addTwoNumbers test", function( assert ) {
     "use strict";
-    assert.equal( 6, addTwoNumbers( 3, 2 ), "5, addTwoNumbers(3, 2); equal succeeds" );
+    assert.equal( 5, addTwoNumbers( 3, 2 ), "5, addTwoNumbers(3, 2); equal succeeds" );
 });
