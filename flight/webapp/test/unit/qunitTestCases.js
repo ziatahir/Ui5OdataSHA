@@ -5,7 +5,7 @@ QUnit.test("Invalid Sales Document Number", function(assert) {
 
 QUnit.test("Invalid Sales Document Number", function(assert) {
       "use strict";
-      assert.equal( false, validateSalesDocNumber(134567890), "length is less" );
+      assert.equal( true, validateSalesDocNumber(134567890), "length is less" );
 });
 
 QUnit.test( "addTwoNumbers test", function( assert ) {
